@@ -2,10 +2,10 @@ Autor: Michał Chrznowwski
 
 Aby uruchomić projekt należy:
 
-Sklonować repozytorium na dysk lokalny
-Uruchomić program Qt Creator
-Z menu programu wybrać opcję Open Project
-Wybrać w oknie dialogowym plik
-Otworzy się wtedy cała struktura projektu
-Następnie wybrać z menu: Budowanie -> Uruchom
-Uruchomiona zostanie aplikacja TextAnalizer
+1.Sklonować repozytorium na dysk lokalny
+2.Uruchomić program Qt Creator
+3.Z menu programu wybrać opcję Open Project
+4.Wybrać w oknie dialogowym plik
+5.Otworzy się wtedy cała struktura projektu
+6.Następnie wybrać z menu: Budowanie -> Uruchom
+7.Uruchomiona zostanie aplikacja TextAnalizer

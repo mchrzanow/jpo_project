@@ -8,4 +8,4 @@ Aby uruchomić projekt należy:
 4.Wybrać w oknie dialogowym plik
 5.Otworzy się wtedy cała struktura projektu
 6.Następnie wybrać z menu: Budowanie -> Uruchom
-7.Uruchomiona zostanie aplikacja TextAnalizer
+7.Uruchomiona zostanie aplikacja Data_base_car_rent

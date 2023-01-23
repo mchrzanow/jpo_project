@@ -3,6 +3,10 @@
 #include <iostream>
 #include<QMainWindow>
 
+/*
+plik nagłówkowy klasy Car
+wersja 1.0
+*/
 
 class Car
 {
@@ -18,7 +22,7 @@ public:
     QString get_avability();
     int get_id(void);
     void set_id(int);
-    void update_status();
+    void update_status();       //aktualnie funkcja nie jest wykorzystywana
 
 private:
     QString make;

@@ -1,5 +1,10 @@
 #include "Client.h"
 
+/*
+definicje metod klasy Client
+wersja 0.1
+*/
+
 Client::Client(QString& name, QString& last_name, int age, address_of_resident& address, driving_licence& licence, int id)
 {
     this->name=name;

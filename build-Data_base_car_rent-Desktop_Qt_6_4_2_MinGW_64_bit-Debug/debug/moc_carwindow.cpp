@@ -26,11 +26,12 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_carwindow_t {
-    uint offsetsAndSizes[8];
+    uint offsetsAndSizes[10];
     char stringdata0[10];
     char stringdata1[18];
     char stringdata2[1];
     char stringdata3[18];
+    char stringdata4[23];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_carwindow_t::offsetsAndSizes) + ofs), len 
@@ -39,12 +40,14 @@ Q_CONSTINIT static const qt_meta_stringdata_carwindow_t qt_meta_stringdata_carwi
         QT_MOC_LITERAL(0, 9),  // "carwindow"
         QT_MOC_LITERAL(10, 17),  // "on_submit_clicked"
         QT_MOC_LITERAL(28, 0),  // ""
-        QT_MOC_LITERAL(29, 17)   // "on_search_clicked"
+        QT_MOC_LITERAL(29, 17),  // "on_search_clicked"
+        QT_MOC_LITERAL(47, 22)   // "on_clearsearch_clicked"
     },
     "carwindow",
     "on_submit_clicked",
     "",
-    "on_search_clicked"
+    "on_search_clicked",
+    "on_clearsearch_clicked"
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
@@ -55,7 +58,7 @@ Q_CONSTINIT static const uint qt_meta_data_carwindow[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       2,   14, // methods
+       3,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,10 +66,12 @@ Q_CONSTINIT static const uint qt_meta_data_carwindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   26,    2, 0x08,    1 /* Private */,
-       3,    0,   27,    2, 0x08,    2 /* Private */,
+       1,    0,   32,    2, 0x08,    1 /* Private */,
+       3,    0,   33,    2, 0x08,    2 /* Private */,
+       4,    0,   34,    2, 0x08,    3 /* Private */,
 
  // slots: parameters
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
 
@@ -85,6 +90,8 @@ Q_CONSTINIT const QMetaObject carwindow::staticMetaObject = { {
         // method 'on_submit_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'on_search_clicked'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'on_clearsearch_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -98,6 +105,7 @@ void carwindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
         switch (_id) {
         case 0: _t->on_submit_clicked(); break;
         case 1: _t->on_search_clicked(); break;
+        case 2: _t->on_clearsearch_clicked(); break;
         default: ;
         }
     }
@@ -123,13 +131,13 @@ int carwindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 2)
+        if (_id < 3)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 2;
+        _id -= 3;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 2)
+        if (_id < 3)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 2;
+        _id -= 3;
     }
     return _id;
 }

@@ -3,11 +3,9 @@ debug/Rental_record.o
 debug/car.o
 debug/car_database.o
 debug/carwindow.o
-debug/cli_database.o
 debug/clientwindow.o
 debug/main.o
 debug/mainwindow.o
-debug/rent_database.o
 debug/rentwindow.o
 debug/moc_carwindow.o
 debug/moc_clientwindow.o

@@ -22,34 +22,33 @@ void cars_database::del_car(std::vector<Car* > &cars_list,int id)
     }
 }
 
-void cars_database::search_car(std::vector<Car *> &cars_list, QString make, QString model,
+std::vector<Car*> cars_database::search_car(std::vector<Car *> &cars_list, QString make, QString model,
                                int year_of_manufacture, QString category, int number_of_seats, int price, QString avability)
 {
-   Car* search_car = new Car(make,model,year_of_manufacture,category,number_of_seats,price,avability,0);
+   //Car* search_car = new Car(make,model,year_of_manufacture,category,number_of_seats,price,avability,0);
    std::vector<Car*> found_cars;
    for(auto i = 0; i < (int)cars_list.size(); i++)
-   {
-   bool match = true;
-   if (!search_car->get_make().isEmpty() && search_car->get_make() != cars_list[i]->get_make())
-        match = false;
-   if (!search_car->get_model().isEmpty() && search_car->get_model() != cars_list[i]->get_model())
-        match = false;
-   if (search_car->get_year_of_manufacture() != 0 && search_car->get_year_of_manufacture() != cars_list[i]->get_year_of_manufacture())
-        match = false;
-   if (!search_car->get_category().isEmpty() && search_car->get_category() != cars_list[i]->get_category())
-        match = false;
-   if (search_car->get_number_of_seats() != 0 && search_car->get_number_of_seats() != cars_list[i]->get_number_of_seats())
-        match = false;
-   if (search_car->get_price() != 0 && search_car->get_price() != cars_list[i]->get_price())
-        match = false;
-   if (!search_car->get_avability().isEmpty() && search_car->get_avability() != cars_list[i]->get_avability())
-        match = false;
-   if (match)
-        found_cars.push_back(cars_list[i]);
-   }
+       {
+           bool match = true;
+           if (!make.isEmpty() && make != cars_list[i]->get_make())
+               match = false;
+           if (!model.isEmpty() && model != cars_list[i]->get_model())
+               match = false;
+           if (year_of_manufacture != 0 && year_of_manufacture != cars_list[i]->get_year_of_manufacture())
+               match = false;
+           if (!category.isEmpty() && category != cars_list[i]->get_category())
+               match = false;
+           if (number_of_seats != 0 && number_of_seats != cars_list[i]->get_number_of_seats())
+               match = false;
+           if (price != 0 && price != cars_list[i]->get_price())
+               match = false;
+           if (!avability.isEmpty() && avability != cars_list[i]->get_avability())
+               match = false;
+           if (match)
+               found_cars.push_back(cars_list[i]);
+        }
    cars_list.clear();
-   cars_list=found_cars;
-   found_cars.clear();
+   return found_cars;
 
  }
 

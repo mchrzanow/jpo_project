@@ -1,5 +1,10 @@
 #include "car.h"
 
+/*
+definicje metod klasy Car
+wersja 1.0
+*/
+
 Car::Car(QString& make, QString& model, int year_of_manufacture, QString& category,int number_of_seats,int price,QString& avability, int id )
 {
     this->make=make;
@@ -58,7 +63,7 @@ void Car::set_id(int new_id)
     this->id=new_id;
 }
 
-void Car::update_status()
+void Car::update_status()                                   //funkcja zmieniająca status pojazdu na przeciwny
 {
     if(this->avability=="available")
     {

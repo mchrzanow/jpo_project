@@ -10,6 +10,11 @@
 #include <vector>
 #include "Rental_record.h"
 
+/*
+plik nagłówkowy klasy rents_database
+w fazie realizacji do dalszego rozwoju
+*/
+
 class rents_database
 {
 public:

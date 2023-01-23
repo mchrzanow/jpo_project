@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QStatusBar>
@@ -22,6 +23,7 @@ class Ui_clientwindow
 {
 public:
     QWidget *centralwidget;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -30,12 +32,20 @@ public:
         if (clientwindow->objectName().isEmpty())
             clientwindow->setObjectName("clientwindow");
         clientwindow->resize(800, 600);
+        QFont font;
+        font.setPointSize(16);
+        font.setItalic(true);
+        clientwindow->setFont(font);
         centralwidget = new QWidget(clientwindow);
         centralwidget->setObjectName("centralwidget");
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(50, 100, 681, 321));
+        label->setFont(font);
         clientwindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(clientwindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 800, 26));
+        menubar->setGeometry(QRect(0, 0, 800, 42));
         clientwindow->setMenuBar(menubar);
         statusbar = new QStatusBar(clientwindow);
         statusbar->setObjectName("statusbar");
@@ -49,6 +59,7 @@ public:
     void retranslateUi(QMainWindow *clientwindow)
     {
         clientwindow->setWindowTitle(QCoreApplication::translate("clientwindow", "clientwindow", nullptr));
+        label->setText(QCoreApplication::translate("clientwindow", "Ups...... Karta niedost\304\231pna, strona znajduje si\304\231 w realizacji", nullptr));
     } // retranslateUi
 
 };

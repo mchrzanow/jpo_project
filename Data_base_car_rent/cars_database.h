@@ -14,16 +14,19 @@
 #include <QStandardItemModel>
 #include <QTableView>
 
+/*
+ * plik nagłówkowy klasy cars_database
+ * wersja 1.0
+*/
 class cars_database
 {
 public:
     cars_database();
-    void number_of_cars();
-    void add_car(std::vector<Car*>& cars_list,QString make, QString model, int year_of_manufacture, QString category,int number_of_seats,
-                 int price,QString avability);
+    void add_car(std::vector<Car*>& cars_list,QString make, QString model, int year_of_manufacture,
+                 QString category,int number_of_seats,int price,QString avability);
     void del_car(std::vector<Car*>& cars_list,int id);
-    void search_car(std::vector<Car*> & cars_list, QString make, QString model,
-                    int year_of_manufacture, QString category, int number_of_seats, int price, QString avability);
+    std::vector<Car*> search_car(std::vector<Car*> & cars_list, QString make, QString model,int year_of_manufacture,
+                    QString category, int number_of_seats, int price, QString avability);
     void writeToJson(std::vector<Car*>& cars_list);
     void readFromJson(std::vector<Car*>& cars_list);
     std::vector<Car*> cars_list;

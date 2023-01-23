@@ -3,6 +3,11 @@
 #include <iostream>
 #include <QMainWindow>
 
+/*
+plik nagłówkowy dla klasy Client
+zrealizowana - nie wykorzystywana na aktualnym etapie projektu
+*/
+
 struct address_of_resident
 {
     QString street;

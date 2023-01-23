@@ -1,4 +1,0 @@
-#ifndef RENT_DATABASE_H
-#define RENT_DATABASE_H
-
-#endif // RENT_DATABASE_H

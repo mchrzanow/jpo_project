@@ -5,6 +5,10 @@
 #include "cars_database.h"
 #include <QTableView>
 
+/*
+plik nagłówkowy okna carwindow
+wersja 1.0
+*/
 namespace Ui {
 class carwindow;
 }
@@ -25,13 +29,15 @@ public:
     int price_;
     int seats_;
     int year_;
-    void update_table(QTableView* tableview);
-    void print_search(QTableView* tableview, std::vector<Car*> &car_list);
+    void update_table(QTableView* tableview);       //funkcja uaktualniająca widok w tableList w oknie po dodaniu rekordu
+    void print_search(QTableView* tableview, std::vector<Car*> &car_list); //funkcja uaktualniająca widok w tableList po wykonaniu wyszukiwania
 
 private slots:
-    void on_submit_clicked();
+    void on_submit_clicked();       //obsługa sygnału przycisku submit
 
-    void on_search_clicked();
+    void on_search_clicked();       //obsługa sygnału przycisku search
+
+    void on_clearsearch_clicked();  //obsługa sygnału przycisku clear search
 
 private:
     Ui::carwindow *ui;

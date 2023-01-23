@@ -1,5 +1,10 @@
 #include "Rental_record.h"
 
+/*
+definicje metod klasy Rental_record
+wersja 0.1
+*/
+
 Rental_record::Rental_record(int rent_id,QString& start_date, QString& end_date,int km_limit, int price, QString& fullname,int cli_id, QString& model, int car_id)
 {
     this->rent_id=rent_id;

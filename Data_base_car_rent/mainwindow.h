@@ -7,6 +7,11 @@
 #include "clientwindow.h"
 #include "cars_database.h"
 
+/*
+plik nagłówkowy dla okna mainwindow
+wersja 1.0
+*/
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -20,11 +25,11 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_car_clicked();
+    void on_car_clicked();          //obsługa sygnału od przycisku car
 
-    void on_rental_clicked();
+    void on_rental_clicked();       //obsługa sygnału od przycisku rental
 
-    void on_clients_clicked();
+    void on_clients_clicked();      //obsługa sygnału od przycisku clients
 
 private:
     Ui::MainWindow *ui;

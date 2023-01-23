@@ -75,7 +75,7 @@ void carwindow::print_search(QTableView* tableView,std::vector<Car*> &car_list)
           model->appendRow(items);
         }
         tableView->setModel(model);
-
+        delete model;
 }
 void carwindow::on_submit_clicked()
 {
@@ -92,9 +92,19 @@ void carwindow::on_submit_clicked()
 void carwindow::on_search_clicked()
 {
     cars_db.readFromJson(cars_db.cars_list);
-    cars_db.search_car(cars_db.cars_list, make_=ui->make->text(),model_=ui->model->text(),year_ =ui->year_of_production->text().toInt(), category_= ui->category->text(),
+    std::vector<Car*> founded_cars = cars_db.search_car(cars_db.cars_list, make_=ui->make->text(),model_=ui->model->text(),year_ =ui->year_of_production->text().toInt(), category_= ui->category->text(),
                        seats_= ui->number_of_seats->text().toInt(), price_=ui->price->text().toInt(), avability_ = ui->avability->text());
-    print_search(ui->tableView,cars_db.cars_list);
+    print_search(ui->tableView,founded_cars);
+    cars_db.cars_list.clear();
+    founded_cars.clear();
+
+}
+
+
+void carwindow::on_clearsearch_clicked()
+{
+    cars_db.readFromJson(cars_db.cars_list);
+    update_table(ui->tableView);
     cars_db.cars_list.clear();
 }
 

@@ -11,10 +11,9 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -24,11 +23,7 @@ class Ui_rentwindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QLineEdit *lineEdit;
-    QLineEdit *lineEdit_2;
-    QLineEdit *lineEdit_3;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -39,21 +34,13 @@ public:
         rentwindow->resize(800, 600);
         centralwidget = new QWidget(rentwindow);
         centralwidget->setObjectName("centralwidget");
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(60, 220, 93, 29));
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(50, 480, 93, 29));
-        lineEdit = new QLineEdit(centralwidget);
-        lineEdit->setObjectName("lineEdit");
-        lineEdit->setGeometry(QRect(60, 100, 113, 25));
-        lineEdit_2 = new QLineEdit(centralwidget);
-        lineEdit_2->setObjectName("lineEdit_2");
-        lineEdit_2->setGeometry(QRect(230, 100, 113, 25));
-        lineEdit_3 = new QLineEdit(centralwidget);
-        lineEdit_3->setObjectName("lineEdit_3");
-        lineEdit_3->setGeometry(QRect(390, 100, 113, 25));
+        label = new QLabel(centralwidget);
+        label->setObjectName("label");
+        label->setGeometry(QRect(50, 210, 691, 141));
+        QFont font;
+        font.setPointSize(16);
+        font.setItalic(true);
+        label->setFont(font);
         rentwindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(rentwindow);
         menubar->setObjectName("menubar");
@@ -71,8 +58,7 @@ public:
     void retranslateUi(QMainWindow *rentwindow)
     {
         rentwindow->setWindowTitle(QCoreApplication::translate("rentwindow", "MainWindow", nullptr));
-        pushButton->setText(QCoreApplication::translate("rentwindow", "PushButton", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("rentwindow", "PushButton", nullptr));
+        label->setText(QCoreApplication::translate("rentwindow", "Ups...... Karta niedost\304\231pna, strona znajduje si\304\231 w realizacji", nullptr));
     } // retranslateUi
 
 };

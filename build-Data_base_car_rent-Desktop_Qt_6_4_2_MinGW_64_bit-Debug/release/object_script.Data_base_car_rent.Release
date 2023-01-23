@@ -3,11 +3,9 @@ release/Rental_record.o
 release/car.o
 release/car_database.o
 release/carwindow.o
-release/cli_database.o
 release/clientwindow.o
 release/main.o
 release/mainwindow.o
-release/rent_database.o
 release/rentwindow.o
 release/moc_carwindow.o
 release/moc_clientwindow.o

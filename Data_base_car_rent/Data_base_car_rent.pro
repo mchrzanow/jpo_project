@@ -14,11 +14,9 @@ SOURCES += \
     car.cpp \
     car_database.cpp \
     carwindow.cpp \
-    cli_database.cpp \
     clientwindow.cpp \
     main.cpp \
     mainwindow.cpp \
-    rent_database.cpp \
     rentwindow.cpp
 
 HEADERS += \
@@ -27,10 +25,8 @@ HEADERS += \
     car.h \
     cars_database.h \
     carwindow.h \
-    cli_database.h \
     clientwindow.h \
     mainwindow.h \
-    rent_database.h \
     rents_database.h \
     rentwindow.h
 

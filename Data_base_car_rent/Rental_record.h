@@ -3,6 +3,11 @@
 #include <iostream>
 #include <QMainWindow>
 
+/*
+plik nagłówkowy klasy rental_record
+zrealizowana - nie wykorzystywana na aktualnym etapie projektu
+*/
+
 class Rental_record
 {
 public:

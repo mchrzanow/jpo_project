@@ -3,6 +3,11 @@
 
 #include <QMainWindow>
 
+/*
+plik nagłówkowy dla okna rentwindow
+w fazie realizacji - do dalszego rozwoju
+*/
+
 namespace Ui {
 class rentwindow;
 }

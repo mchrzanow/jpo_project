@@ -75,7 +75,6 @@ void carwindow::print_search(QTableView* tableView,std::vector<Car*> &car_list)
           model->appendRow(items);
         }
         tableView->setModel(model);
-        delete model;
 }
 void carwindow::on_submit_clicked()
 {

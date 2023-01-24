@@ -21,7 +21,6 @@ public:
     int get_price();
     QString get_avability();
     int get_id(void);
-    void set_id(int);
     void update_status();       //aktualnie funkcja nie jest wykorzystywana
 
 private:

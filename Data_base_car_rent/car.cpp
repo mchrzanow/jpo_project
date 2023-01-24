@@ -58,11 +58,6 @@ int Car::get_id(void)
     return this->id;
 }
 
-void Car::set_id(int new_id)
-{
-    this->id=new_id;
-}
-
 void Car::update_status()                                   //funkcja zmieniająca status pojazdu na przeciwny
 {
     if(this->avability=="available")

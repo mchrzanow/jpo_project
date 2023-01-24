@@ -1,0 +1,62 @@
+[
+    {
+        "avability": "unavaiable",
+        "category": "B",
+        "id": 1674502048,
+        "make": "Renault",
+        "model": "Clio RS",
+        "number_of_seats": 5,
+        "price": 300,
+        "year_of_manufacture": 2004
+    },
+    {
+        "avability": "avaiable",
+        "category": "S",
+        "id": 1674501928,
+        "make": "Renault",
+        "model": "Megane RS",
+        "number_of_seats": 5,
+        "price": 400,
+        "year_of_manufacture": 2012
+    },
+    {
+        "avability": "unavaiable",
+        "category": "S",
+        "id": 1674501662,
+        "make": "Audi",
+        "model": "RS3",
+        "number_of_seats": 5,
+        "price": 740,
+        "year_of_manufacture": 2020
+    },
+    {
+        "avability": "unavaiable",
+        "category": "S",
+        "id": 1674501623,
+        "make": "BMW",
+        "model": "M3 Competition",
+        "number_of_seats": 5,
+        "price": 800,
+        "year_of_manufacture": 2017
+    },
+    {
+        "avability": "avaiable",
+        "category": "S",
+        "id": 1674501545,
+        "make": "Mercedes-Benz",
+        "model": "CLA 45 AMG",
+        "number_of_seats": 5,
+        "price": 600,
+        "year_of_manufacture": 2018
+    },
+    {
+        "avability": "avaiable",
+        "category": "S",
+        "id": 1674501459,
+        "make": "Ford",
+        "model": "Mustag",
+        "number_of_seats": 5,
+        "price": 550,
+        "year_of_manufacture": 2016
+    }
+]
